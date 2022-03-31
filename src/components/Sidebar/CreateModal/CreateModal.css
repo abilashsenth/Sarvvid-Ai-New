@@ -1,0 +1,33 @@
+.createNewModal {
+  position: fixed;
+  bottom: 5%;
+  
+  
+  color: #121212;
+  /* color: white; */
+  min-width: 30%;
+  margin: auto;
+  background-color: #eee;
+  
+  border-radius: 10px;
+  overflow: scroll;
+  /* padding-top: 15%; */
+  box-shadow: 0 1px 10px rgb(60 64 67 / 30%);
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.createNewModal::-webkit-scrollbar {
+  display: none;
+}
+.uploadingDiv {
+  padding: 1rem 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.uploadingFileNameDiv {
+  width: 70%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}

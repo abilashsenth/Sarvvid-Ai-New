@@ -1,0 +1,63 @@
+.CheckOnlineModal {
+  overflow: scroll;
+  /* border-radius: 2%; */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  /* z-index: 4003; */
+}
+.CheckOnlineModal::-webkit-scrollbar {
+  display: none;
+}
+.div_CheckOnline_heading {
+  height: min-content;
+  margin-bottom: 2%;
+  cursor: default;
+}
+.CheckOnlineHeading {
+  color: #00b3ff;
+  /* color: #3c4043; */
+}
+.CheckOnlineBody {
+  text-align: left;
+  color: #3c4043;
+  letter-spacing: 0.02em;
+}
+.CheckOnlineInstruction {
+  font-size: 135%;
+  margin-bottom: 4%;
+}
+.CheckOnline_button {
+  background: #00b3ff;
+  outline: none;
+  margin-top: 2%;
+  border: 1px solid #dadce0;
+  width: 20%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border-radius: 4px;
+  font-size: 120%;
+  transition-duration: 0.4s;
+  /* letter-spacing: 0.0107142857em; */
+  letter-spacing: 0.02em;
+  color: white;
+  position: absolute;
+  right: 4%;
+}
+.CheckOnline_button:hover {
+  cursor: pointer;
+  /* background-color: #f6fafe; */
+  /* color: white; */
+}
+/* .upgrade_plan_button:disabled {
+  pointer-events: none;
+  cursor: default;
+  color: #3c4043;
+} */
+.CheckOnline_button:focus {
+  outline: none;
+}
+.dinoGif {
+  position: relative;
+  width: 70%;
+  left: 14%;
+}

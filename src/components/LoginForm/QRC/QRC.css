@@ -1,0 +1,75 @@
+/* .login_QR {
+  background-color: #fff;
+  background-color: white;
+  background: none;
+  align-self: center;
+  width: 50%;
+  min-height: 90%;
+  padding: 2%;
+  display: flex;
+  align-items: flex-start;
+  border-radius: 5%;
+  text-align: left;
+  padding-top: 4%;
+  z-index: 4002;
+}
+
+.login_QR_close {
+  margin-left: 4%;
+  color: #fff;
+  position: relative;
+  top: -8%;
+  left: 1.5%;
+  display: flex;
+
+  align-self: auto;
+  right: 2%;
+}
+.login_QR_close:hover {
+  background-color: black;
+  color: black;
+} */
+
+
+.login_QR{
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 50%;
+  border-radius: 15px;
+  min-height: 175px;
+
+}
+
+.login_QR_instruction {
+  /* margin-right: 4%; */
+  font-size: 20px;
+  text-align: left;
+
+}
+
+.login_QR_instruction h3{
+  font-size: 1.5rem;
+}
+
+.login_QR_instruction li{
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+@media (max-width:1400px){
+  .login_QR{
+    width: 90%;
+    margin-bottom: 0rem;
+  }
+}
+
+@media (max-width:1000px){
+  .login_QR{
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 1rem;
+  }
+}

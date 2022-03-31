@@ -1,0 +1,46 @@
+:root {
+  --primary-color: #00b3ff;
+  --secondary-color: #05e395;
+  --tertiary-color: black;
+  /* --font-type: Poppins;
+  --default-font-color: #2e266f; */
+}
+.App {
+  text-align: center;
+  height: 100vh;
+  align-items: center;
+  /* background-color: var(--tertiary-color); */
+  width: 100vw;
+  background-color: #fafafa;
+  /* background-color: var(--secondary-color); */
+}
+
+.App.dark-theme {
+  text-align: center;
+  height: 100vh;
+  align-items: center;
+  /* background-color: var(--tertiary-color); */
+  width: 100vw;
+  background-color: #121212;
+}
+
+
+.hv-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Dashboard {
+  height: 100%;
+  width: 100%;
+  background-color: #fafafa;
+
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  transition: all 300ms ease-in-out;
+}
+
+.Dashboard.dark{
+  background: #121212;
+}

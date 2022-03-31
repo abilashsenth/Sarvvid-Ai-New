@@ -1,0 +1,56 @@
+.nav-container{
+    /* background: green; */
+    width: 100%;
+    
+}
+
+.path-container{
+    width: 60%;
+    margin-left:0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.path{
+    box-sizing: border-box;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 18px;
+    color: #acacac;
+    font-weight: lighter;
+    word-spacing: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    direction: rtl;
+    transform: translateX(-10px);
+    
+    
+}
+
+.path .currentPath{
+    color: #001800;
+
+}
+
+.back-btn{
+    background: #FAFAFA;
+    
+    border: 1px solid #FAFAFA;
+    box-sizing: border-box;
+    box-shadow: 0px 100px 80px rgba(41, 72, 152, 0.05), 0px 64.8148px 46.8519px rgba(41, 72, 152, 0.037963), 0px 38.5185px 25.4815px rgba(41, 72, 152, 0.0303704), 0px 20px 13px rgba(41, 72, 152, 0.025), 0px 8.14815px 6.51852px rgba(41, 72, 152, 0.0196296), 0px 1.85185px 3.14815px rgba(41, 72, 152, 0.012037);
+    border-radius: 10px;
+}
+
+.nav-container.dark-theme .back-btn{
+    box-shadow: 0;
+    border: none;
+    background: transparent;
+}
+
+/* Media */
+@media screen and (max-width: 1000px) {
+    .path-container{
+        width: 100%;
+    }
+}

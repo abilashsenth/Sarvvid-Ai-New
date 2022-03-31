@@ -1,0 +1,50 @@
+.menu-btn{
+   
+   cursor: pointer;
+   transition: all 300ms ease-in-out;
+}
+
+
+
+.search-section{
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+}
+
+.search-section img {
+    transform: translateX(160%);
+    z-index: 10;
+}
+
+.mobile_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.min_theme_toggle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 300ms ease-in-out;
+}
+
+.min-theme-toggle{
+    height: 24px;
+    overflow: hidden;
+}
+
+.min-theme-toggle.dark .min_theme_toggle{
+    transform: translateY(-24px);
+}
+
+@media (min-width:1000px) {
+    .menu-btn{
+        display: none;
+    }
+    .mobile_header{
+        display: none;
+    }
+}
