@@ -258,7 +258,7 @@ const RightPane = (props) => {
       amount: price * 100, // rupees in paise
     };
     const result = await axios.post(
-      "http://14.102.108.122:3000/payment/orders",
+      "https://api.sarvvid-ai.com/payment/orders",
       orderData
     );
     if (!result) {
@@ -285,7 +285,7 @@ const RightPane = (props) => {
         };
 
         const result = await axios.post(
-          "http://14.102.108.122:3000/payment/success",
+          "https://api.sarvvid-ai.com/payment/success",
           data
         );
         if (!result) {

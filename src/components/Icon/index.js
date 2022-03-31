@@ -167,7 +167,7 @@ import "./styles.css"
 
 //       // await axios({
 //       //   method: "post",
-//       //   url: `http://14.102.108.122:3000/deletefile?IMEI=${localStorage.getItem("IMEI")}&filename=${this.props.entry.name}&filesize=${this.props.entry.size}`,
+//       //   url: `https://api.sarvvid-ai.com/deletefile?IMEI=${localStorage.getItem("IMEI")}&filename=${this.props.entry.name}&filesize=${this.props.entry.size}`,
 //       //   headers: {
 //       //     "Content-type": "application/json",
 //       //     authtoken: localStorage.getItem("authtoken"),
@@ -200,7 +200,7 @@ import "./styles.css"
 
 //       const deleteResp = await axios({
 //         method: 'post',
-//         url: `http://14.102.108.122:3000/deletefile?IMEI=${localStorage.getItem("IMEI")}&filename=${this.props.entry.name}&filesize=${this.props.entry.size}`,
+//         url: `https://api.sarvvid-ai.com/deletefile?IMEI=${localStorage.getItem("IMEI")}&filename=${this.props.entry.name}&filesize=${this.props.entry.size}`,
 //         headers: {Accept: "application/json, text/plain, */*",
 //                   authtoken: localStorage.getItem("authtoken")}, 
 //         data: JSON.stringify(obj)
@@ -216,7 +216,7 @@ import "./styles.css"
 
 //       const resp =  await axios({
 //             method: "post",
-//             url: "http://14.102.108.122:3000/updatefileSystem",
+//             url: "https://api.sarvvid-ai.com/updatefileSystem",
 //             headers: {
 //               "Content-type": "application/json",
 //               authtoken: localStorage.getItem("authtoken"),
@@ -277,7 +277,7 @@ import "./styles.css"
 //                   axios
 //                     .request({
 //                       method: "get",
-//                       url: `http://14.102.108.122:3000/cat?filehash=${
+//                       url: `https://api.sarvvid-ai.com/cat?filehash=${
 //                         entry.name
 //                       }&IMEI=${localStorage.getItem(
 //                         "IMEI"
@@ -434,7 +434,7 @@ const Icon = (props) => {
 
       // await axios({
       //   method: "post",
-      //   url: `http://14.102.108.122:3000/deletefile?IMEI=${localStorage.getItem("IMEI")}&filename=${this.props.entry.name}&filesize=${this.props.entry.size}`,
+      //   url: `https://api.sarvvid-ai.com/deletefile?IMEI=${localStorage.getItem("IMEI")}&filename=${this.props.entry.name}&filesize=${this.props.entry.size}`,
       //   headers: {
       //     "Content-type": "application/json",
       //     authtoken: localStorage.getItem("authtoken"),
@@ -467,7 +467,7 @@ const Icon = (props) => {
 
       const deleteResp = await axios({
         method: 'post',
-        url: `http://14.102.108.122:3000/deletefile?IMEI=${localStorage.getItem("IMEI")}&filename=${props.entry.name}&filesize=${props.entry.size}`,
+        url: `https://api.sarvvid-ai.com/deletefile?IMEI=${localStorage.getItem("IMEI")}&filename=${props.entry.name}&filesize=${props.entry.size}`,
         headers: {Accept: "application/json, text/plain, */*",
                   authtoken: localStorage.getItem("authtoken")}, 
         data: JSON.stringify(obj)
@@ -483,7 +483,7 @@ const Icon = (props) => {
 
       const resp =  await axios({
             method: "post",
-            url: "http://14.102.108.122:3000/updatefileSystem",
+            url: "https://api.sarvvid-ai.com/updatefileSystem",
             headers: {
               "Content-type": "application/json",
               authtoken: localStorage.getItem("authtoken"),
@@ -565,7 +565,7 @@ const Icon = (props) => {
               axios
                 .request({
                   method: "get",
-                  url: `http://14.102.108.122:3000/cat?filehash=${
+                  url: `https://api.sarvvid-ai.com/cat?filehash=${
                     entry.name
                   }&IMEI=${localStorage.getItem(
                     "IMEI"

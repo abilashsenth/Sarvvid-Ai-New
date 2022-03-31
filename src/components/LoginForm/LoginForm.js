@@ -219,7 +219,7 @@ function LoginForm(props) {
     try {
       const resp = await axios({
         method: "post",
-        url: "http://14.102.108.122:3000/forgetpassword",
+        url: "https://api.sarvvid-ai.com/forgetpassword",
         data: {
           email: userEmail,
         },
@@ -256,7 +256,7 @@ function LoginForm(props) {
 
       const resp = await axios({
         method: "post",
-        url: `http://14.102.108.122:3000/webregister`,
+        url: `https://api.sarvvid-ai.com/webregister`,
         headers: { authtoken: enc },
         data: {
           email: userEmail,
@@ -268,7 +268,7 @@ function LoginForm(props) {
 
       const msresp = await axios({
         method: "get",
-        url: `http://14.102.108.122:3000/ms?ms=${130}&IMEI=${userId}`,
+        url: `https://api.sarvvid-ai.com/ms?ms=${130}&IMEI=${userId}`,
       });
 
       console.log("signup resp...", resp);
@@ -328,7 +328,7 @@ function LoginForm(props) {
         }
 
         axios(
-          `http://14.102.108.122:3000/getdata?ping=${localStorage.getItem(
+          `https://api.sarvvid-ai.com/getdata?ping=${localStorage.getItem(
             "ping"
           )}`,
           {
@@ -426,7 +426,7 @@ function LoginForm(props) {
 
       const resp = await axios({
         method: "post",
-        url: `http://14.102.108.122:3000/weblogin`,
+        url: `https://api.sarvvid-ai.com/weblogin`,
         headers: { authtoken: enc },
         data: {
           email: userEmail,
@@ -491,7 +491,7 @@ function LoginForm(props) {
         }
 
         axios(
-          `http://14.102.108.122:3000/getdata?ping=${localStorage.getItem(
+          `https://api.sarvvid-ai.com/getdata?ping=${localStorage.getItem(
             "ping"
           )}`,
           {
